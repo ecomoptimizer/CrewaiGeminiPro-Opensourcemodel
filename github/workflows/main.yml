@@ -1,0 +1,10 @@
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Google API Key
+      run: echo "Using Google API Key ${{ secrets.google_api_key }}"
+      # Replace the echo command with the actual command that needs the API key
